@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>GFG</h1>
+        <h2>Real Estate Management</h2>
+    </header>
+
+    <section class="add-property">
+        <h3>Add a New Property</h3>
+
+        <div class="input-row">
+            <div class="input-group">
+              <label for="title">Title</label>
+              <input type="text" id="title">
+            </div>
+            <div class="input-group">
+              <label for="description">Description</label>
+              <input type="text" id="description">
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label for="imageURL">Image Url</label>
+              <input type="text" id="imageURL">
+            </div>
+            <div class="input-group">
+              <label for="contact">Contact</label>
+              <input type="text" id="contact">
+            </div>
+          </div>
+
+        <button class="add-btn" onclick="addProperty()">Add Property</button>
+    </section>
+
+    <h3>Property List</h3>
+    <div id="property-list" class="property-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
